@@ -1,0 +1,64 @@
+
+@mixin font-specimen($font-name, $font-style, $font-weight) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.eot');
+    src: url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.woff') format('woff'),
+         url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.svg##{$font-name}--#{$font-style}-#{$font-weight}') format('svg');
+    font-style: $font-style;
+    font-weight: $font-weight;
+  }
+}
+
+@include font-specimen(livory, normal, 400);
+
+
+body {
+  font-family: livory, georgia, serif;
+}
+
+.grid--center {
+  text-align: center;
+}
+.grid--center > .grid__item, .grid--center > .content, .grid--center > .sub-content, .grid--center > .footer__item {
+  text-align: left;
+}
+
+.navigation {
+  background: #330384;
+  padding-top: $base-spacing-unit;
+  padding-top: ($base-spacing-unit / $base-font-size)*1rem;
+}
+
+.nav--fit {
+  > li {
+    > a {
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+.hero {
+  height: 10em;
+}
+
+.content {
+  padding-top: $indent-val;
+}
+
+.content--image {
+  background: url(http://placehold.it/900x600) no-repeat 50% 50%;
+  background-size: cover;
+  height: 20em;
+}
+
+.photo--engagement-1 {
+  background: url(../img/115.jpg) no-repeat 50% 0;
+  background-size: cover;
+}
+.photo--engagement-2 {
+  background: url(../img/095.jpg) no-repeat 50% 40%;
+  background-size: cover;
+}
