@@ -1,5 +1,28 @@
 
 .hero {
-  height: 10em;
+  background: url(../img/bg-noise.png);
+  height: 16em;
 }
+
+  .hero header {
+    position: relative;
+  }
+
+  .hero--patricia {
+    display: block;
+    -webkit-transform: skewY(-8deg);
+       -moz-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+         -o-transform: skewY(-8deg);
+            transform: skewY(-8deg);
+  }
+  
+  .hero--jeff {
+    display: block;
+    -webkit-transform: skewY(-8deg);
+       -moz-transform: skewY(-8deg);
+        -ms-transform: skewY(-8deg);
+         -o-transform: skewY(-8deg);
+            transform: skewY(-8deg);
+  }
 

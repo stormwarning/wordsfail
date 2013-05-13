@@ -1,20 +1,10 @@
 
-@include font-specimen(livory, normal, 400);
-
-
 body {
   font-family: livory, georgia, serif;
 }
 
-.grid--center {
-  text-align: center;
-}
-.grid--center > .grid__item, .grid--center > .content, .grid--center > .sub-content, .grid--center > .footer__item {
-  text-align: left;
-}
-
 .navigation {
-  background: #330384;
+  background: $our-purple;
   padding-top: $base-spacing-unit;
   padding-top: ($base-spacing-unit / $base-font-size)*1rem;
 }
@@ -29,20 +19,47 @@ body {
 }
 
 .content {
+  background: url(../img/bg-noise.png);
   padding-top: $indent-val;
   z-index: 99;
   
-/*
-  -webkit-box-shadow:  0px -15px 40px 5px rgba(0, 0, 0, 0.3);
-          box-shadow:  0px -15px 40px 5px rgba(0, 0, 0, 0.3);
-*/
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4),inset 0 1px 0 0 rgba(255,255,255,0.8);
+     -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4),inset 0 1px 0 0 rgba(255,255,255,0.8);
+          box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4),inset 0 1px 0 0 rgba(255,255,255,0.8);
 }
 
-.content > .grid {
+section > .grid {
   text-align: center;
 }
-.content > .grid > .grid__item {
+section > .grid > .grid__item {
   text-align: left;
+}
+
+
+.content--details {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
+     -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
+          box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
+}
+.content--party {
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
+     -moz-box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
+          box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.8);
+}
+.content--rsvp {
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
+     -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
+          box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
+}
+
+
+.content--details dt {
+  font-weight: bold;
+  text-align: center;
+}
+
+.content--details dd {
+  margin: 0;
 }
 
 .content--image {
@@ -50,6 +67,11 @@ body {
   background-size: cover;
   height: 20em;
   z-index: 1;
+  
+    
+  -webkit-box-shadow: inset 0 -8px 16px -8px rgba(0,0,0,0.6),inset 0 8px 16px -8px rgba(0,0,0,0.6);
+     -moz-box-shadow: inset 0 -8px 16px -8px rgba(0,0,0,0.6),inset 0 8px 16px -8px rgba(0,0,0,0.6);
+          box-shadow: inset 0 -8px 16px -8px rgba(0,0,0,0.6),inset 0 8px 16px -8px rgba(0,0,0,0.6);
 }
 
 .photo--engagement-1 {
@@ -59,4 +81,11 @@ body {
 .photo--engagement-2 {
   background: url(../img/095.jpg) no-repeat 50% 40%;
   background-size: cover;
+}
+.photo--engagement-3 {
+    
+  -webkit-box-shadow: inset 0 8px 16px -8px rgba(0,0,0,0.6);
+     -moz-box-shadow: inset 0 8px 16px -8px rgba(0,0,0,0.6);
+          box-shadow: inset 0 8px 16px -8px rgba(0,0,0,0.6);
+
 }
