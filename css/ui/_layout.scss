@@ -1,6 +1,16 @@
 
+@include font-specimen(livory, normal, 400);
+
+
 body {
   font-family: livory, georgia, serif;
+}
+
+.grid--center {
+  text-align: center;
+}
+.grid--center > .grid__item, .grid--center > .content, .grid--center > .sub-content, .grid--center > .footer__item {
+  text-align: left;
 }
 
 .navigation {
