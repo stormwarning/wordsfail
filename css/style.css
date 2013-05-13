@@ -3607,15 +3607,21 @@ body {
   text-align: center;
 }
 
-.hero {
-  height: 10em;
-}
-
 .content {
   padding-top: 1.5em;
   z-index: 99;
-  -webkit-box-shadow: 0px -15px 40px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px -15px 40px 5px rgba(0, 0, 0, 0.3);
+  /*
+    -webkit-box-shadow:  0px -15px 40px 5px rgba(0, 0, 0, 0.3);
+            box-shadow:  0px -15px 40px 5px rgba(0, 0, 0, 0.3);
+  */
+}
+
+.content > .grid {
+  text-align: center;
+}
+
+.content > .grid > .grid__item {
+  text-align: left;
 }
 
 .content--image {
@@ -3633,4 +3639,8 @@ body {
 .photo--engagement-2 {
   background: url(../img/095.jpg) no-repeat 50% 40%;
   background-size: cover;
+}
+
+.hero {
+  height: 10em;
 }

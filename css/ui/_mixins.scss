@@ -1,0 +1,13 @@
+
+@mixin font-specimen($font-name, $font-style, $font-weight) {
+  @font-face {
+    font-family: '#{$font-name}';
+    src: url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.eot');
+    src: url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.woff') format('woff'),
+         url('../fonts/#{$font-name}--#{$font-style}-#{$font-weight}.svg##{$font-name}--#{$font-style}-#{$font-weight}') format('svg');
+    font-style: $font-style;
+    font-weight: $font-weight;
+  }
+}
+
