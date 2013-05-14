@@ -6,10 +6,15 @@
 
   .hero header {
     position: relative;
+    width: 100%;
   }
 
   .hero--patricia {
     display: block;
+    position: absolute;
+    top: $base-spacing-unit;
+    left: 38%;
+    
     -webkit-transform: skewY(-8deg);
        -moz-transform: skewY(-8deg);
         -ms-transform: skewY(-8deg);
@@ -17,12 +22,43 @@
             transform: skewY(-8deg);
   }
   
+  .hero--amp {
+    display: block;
+    font-size: $tera#{px};
+    opacity: 0.2;
+    position: absolute;
+    top: $base-spacing-unit * 2;
+    left: 43%;
+    z-index: 1;
+  }
+  
   .hero--jeff {
     display: block;
+    position: absolute;
+    top: $base-spacing-unit * 3;
+    left: 53%;
+    
     -webkit-transform: skewY(-8deg);
        -moz-transform: skewY(-8deg);
         -ms-transform: skewY(-8deg);
          -o-transform: skewY(-8deg);
             transform: skewY(-8deg);
+  }
+  
+  .hero--are,
+  .hero--getting,
+  .hero--married {
+    display: block;
+    position: absolute;
+    top: $base-spacing-unit * 6;
+  }
+  .hero--are {
+    left: 20%;
+  }
+  .hero--getting {
+    left: 33%;
+  }
+  .hero--married {
+    left: 58%;
   }
 
