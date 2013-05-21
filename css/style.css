@@ -3679,6 +3679,8 @@ section > .grid > .grid__item {
 .content--rsvp abbr {
   border: none;
   color: #330384;
+  font-variant: normal;
+  text-transform: none;
 }
 
 .content--details dt {
