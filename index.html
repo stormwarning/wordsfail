@@ -10,6 +10,20 @@
 </head>
 <body>
   
+  <section class="hero">
+  <div class="grid">
+    <div class="grid__item  ten-twelfths">
+
+    	<header>
+    	  <figure class="hero__title"><h1 class="visuallyhidden">Patricia & Jeff are getting married!</h1></figure>
+        <span class="hero__ribbon">&nbsp;</span>
+    	</header>
+
+    </div>
+  </div>
+  </section>
+  
+
   <section class="navigation">
   <div class="grid">
     <div class="grid__item  ten-twelfths">
@@ -29,26 +43,6 @@
   </section>
   
   
-  <section class="hero">
-  <div class="grid">
-    <div class="grid__item  ten-twelfths">
-
-    	<header>
-    	  <h1>
-          <span class="hero--patricia">Patricia</span>
-          <span class="hero--amp">&amp;</span>
-          <span class="hero--jeff">Jeff</span>
-          <span class="hero--are">are</span>
-          <span class="hero--getting">getting</span>
-          <span class="hero--married">married!</span>
-        </h1>
-    	</header>
-
-    </div>
-  </div>
-  </section>
-  
-
   <section class="content  content--rsvp" id="_rsvp">
   <div class="grid">
     <div class="grid__item  eight-twelfths  palm-ten-twelfths">
@@ -63,7 +57,7 @@
   </section>
   
   
-  <section class="content--image  photo--engagement-1">
+  <section class="content--image  photo--engagement-1" data-stellar-background-ratio="0.5">
     <p>&nbsp;</p>
   </section>
   
@@ -81,7 +75,7 @@
   </section>
   
   
-  <section class="content--image  photo--engagement-2">
+  <section class="content--image  photo--engagement-2" data-stellar-background-ratio="0.5">
     <p>&nbsp;</p>
   </section>
 
@@ -155,9 +149,19 @@
   </section>
 
 
-  <section class="content--image  photo--engagement-3">
+  <section class="content--image  photo--engagement-3" data-stellar-background-ratio="0.5">
     <p>&nbsp;</p>
   </section>
 
+
+
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(window).stellar();
+    }
+  </script>
 </body>
 </html>

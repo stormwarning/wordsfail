@@ -1,64 +1,38 @@
 
 .hero {
-  background: url(../img/bg-noise.png);
+  background: $our-purple;
   height: 16em;
 }
 
   .hero header {
+    height: 24em;
     position: relative;
     width: 100%;
   }
 
-  .hero--patricia {
-    display: block;
-    position: absolute;
-    top: $base-spacing-unit;
-    left: 38%;
-    
-    -webkit-transform: skewY(-8deg);
-       -moz-transform: skewY(-8deg);
-        -ms-transform: skewY(-8deg);
-         -o-transform: skewY(-8deg);
-            transform: skewY(-8deg);
-  }
+.hero__title {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
   
-  .hero--amp {
-    display: block;
-    font-size: $tera#{px};
-    opacity: 0.2;
-    position: absolute;
-    top: $base-spacing-unit * 2;
-    left: 43%;
-    z-index: 1;
-  }
-  
-  .hero--jeff {
-    display: block;
-    position: absolute;
-    top: $base-spacing-unit * 3;
-    left: 53%;
-    
-    -webkit-transform: skewY(-8deg);
-       -moz-transform: skewY(-8deg);
-        -ms-transform: skewY(-8deg);
-         -o-transform: skewY(-8deg);
-            transform: skewY(-8deg);
-  }
-  
-  .hero--are,
-  .hero--getting,
-  .hero--married {
-    display: block;
-    position: absolute;
-    top: $base-spacing-unit * 6;
-  }
-  .hero--are {
-    left: 20%;
-  }
-  .hero--getting {
-    left: 33%;
-  }
-  .hero--married {
-    left: 58%;
-  }
+  @include svg-bg(patricia-jeff);
+}
 
+.hero__ribbon {
+  background-position: 54.5% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: -1em;
+  width: 100%;
+  z-index: 1;
+  
+  @include svg-bg(ribbon);
+}

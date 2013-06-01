@@ -11,3 +11,7 @@
   }
 }
 
+@mixin svg-bg($filename) {
+  background-image: url('../img/#{$filename}.png');
+  background-image: url('../img/#{$filename}.svg'), none;
+}
