@@ -1,17 +1,17 @@
 
 .hero {
   background: $our-purple;
-  height: 16em;
+  height: 520px;
 }
 
   .hero header {
-    height: 24em;
+    height: 520px;
     position: relative;
     width: 100%;
   }
 
 .hero__title {
-  background-position: 50% 50%;
+  background-position: 45.5% 50%;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
@@ -20,10 +20,12 @@
   width: 100%;
   z-index: 20;
   
-  @include svg-bg(patricia-jeff);
+  @include svg-bg(ampersand-type);
 }
 
 .hero__ribbon {
+  display: none;
+/*
   background-position: 54.5% 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -35,4 +37,5 @@
   z-index: 1;
   
   @include svg-bg(ribbon);
+*/
 }

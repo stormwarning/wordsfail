@@ -3170,11 +3170,49 @@ h1, h2, h3, .content--details dt, h4, h5, h6 {
   padding-top: 24px;
   padding-top: 1.5rem; }
 
-.nav--fit > li > a {
-  color: #fff;
-  font-family: bran, sans-serif;
-  text-align: center;
-  text-transform: uppercase; }
+.nav--main {
+  position: relative; }
+
+.affix .nav--main {
+  background: #330384;
+  /*   height: $base-spacing-unit*2; */
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.nav--fit {
+  /*   position: absolute; */
+  z-index: 21; }
+  .nav--fit > li > a {
+    color: #fff;
+    font-family: bran, sans-serif;
+    text-align: center;
+    text-transform: uppercase; }
+
+.affix .nav--fit {
+  margin-left: 8.33%;
+  vertical-align: middle;
+  width: 83.333%; }
+
+.nav__ribbon {
+  display: none; }
+
+.affix .nav__ribbon {
+  background: transparent no-repeat 50% 100%;
+  display: block;
+  height: 128px;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-image: url("../img/ribbon.png");
+  background-image: url("../img/ribbon.svg"), none; }
 
 section > .grid {
   text-align: center; }
@@ -3184,7 +3222,10 @@ section > .grid > .grid__item {
 
 .content {
   background: url(../img/bg-noise.png);
-  padding-top: 1.5em;
+  padding-top: 96px;
+  padding-top: 6rem;
+  padding-bottom: 96px;
+  padding-bottom: 6rem;
   z-index: 99;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
   -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
@@ -3192,6 +3233,8 @@ section > .grid > .grid__item {
 
 .content a {
   color: #330384; }
+  .content a:hover {
+    border-bottom: 1px solid; }
 
 .content--party {
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.4);
@@ -3231,11 +3274,11 @@ section > .grid > .grid__item {
 
 .photo--engagement-1 {
   background-image: url(../img/115.jpg);
-  background-position: 50% 0; }
+  background-position: 50% -30%; }
 
 .photo--engagement-2 {
   background-image: url(../img/095.jpg);
-  background-position: 50% 40%; }
+  background-position: 50% -40%; }
 
 .photo--engagement-3 {
   background-image: url(../img/033.jpg);
@@ -3247,15 +3290,15 @@ section > .grid > .grid__item {
 
 .hero {
   background: #330384;
-  height: 16em; }
+  height: 520px; }
 
 .hero header {
-  height: 24em;
+  height: 520px;
   position: relative;
   width: 100%; }
 
 .hero__title {
-  background-position: 50% 50%;
+  background-position: 45.5% 50%;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
@@ -3263,18 +3306,21 @@ section > .grid > .grid__item {
   top: 0;
   width: 100%;
   z-index: 20;
-  background-image: url("../img/patricia-jeff.png");
-  background-image: url("../img/patricia-jeff.svg"), none; }
+  background-image: url("../img/ampersand-type.png");
+  background-image: url("../img/ampersand-type.svg"), none; }
 
 .hero__ribbon {
-  background-position: 54.5% 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
-  height: 100%;
-  position: absolute;
-  top: -1em;
-  width: 100%;
-  z-index: 1;
-  background-image: url("../img/ribbon.png");
-  background-image: url("../img/ribbon.svg"), none; }
+  display: none;
+  /*
+    background-position: 54.5% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: -1em;
+    width: 100%;
+    z-index: 1;
+    
+    @include svg-bg(ribbon);
+  */ }

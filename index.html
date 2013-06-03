@@ -24,7 +24,7 @@
   </section>
   
 
-  <section class="navigation">
+  <section class="navigation" data-spy="affix" data-offset-top="520">
   <div class="grid">
     <div class="grid__item  ten-twelfths">
 
@@ -32,10 +32,13 @@
         <ul class="nav  nav--fit">
           <li><a href="#_rsvp">RSVP</a></li>
           <li><a href="#_story">Story</a></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
           <li><a href="#_details">Details</a></li>
           <li><a href="#_party">Party</a></li>
         </ul>
       </nav>
+      
+      <div class="nav__ribbon"></div>
   
       </div>
     </div>
@@ -50,7 +53,7 @@
     	<h2><abbr title="Répondez s'il vous plaît">RSVP</abbr></h2>
 
       <p>Please fill out this form to RSVP by August 14.<br>
-      Registered at <a href="#">Hudson&#8217;s Bay</a></p>
+      Registered at <a href="http://giftregistry.hbc.com/grworks/prj/generic_online/jsp/common/grbookmark.jsp?retailerid=4&cc=400109843919&languageId=0" target="_blank">Hudson&#8217;s Bay</a></p>
   		
     </div>
   </div>
@@ -157,11 +160,12 @@
 
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.affix.min.js"></script>
   <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
   <script type="text/javascript">
     jQuery(document).ready(function ($) {
       $(window).stellar();
-    }
+    });
   </script>
 </body>
 </html>
