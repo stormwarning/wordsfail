@@ -1,26 +1,28 @@
 
 .hero {
-  background: $our-purple;
-  height: 520px;
+  background: url(../img/060.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+/*   height: 520px; */
 }
 
   .hero header {
-    height: 520px;
+    height: 600px;
     position: relative;
     width: 100%;
   }
 
 .hero__title {
-  background-position: 45.5% 50%;
+  background-position: 50% 0%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 30%;
   height: 100%;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 20;
   
-  @include svg-bg(ampersand-type);
+  @include svg-bg(ampersand-type-big);
 }
 
 .hero__ribbon {
