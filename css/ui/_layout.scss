@@ -29,10 +29,14 @@ body {
 
   -webkit-background-clip: text;
 
-  color: $our-purple;
+  color: transparentize($our-purple, 0.6);
 /*   -webkit-text-fill-color: transparent; */
   font-family: 'Roboto', sans-serif;
   text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.content h2 {
+  margin-left: -1em;
 }
 
 
@@ -133,8 +137,13 @@ section > .grid > .grid__item {
   }
 }
 
+.content ul {
+  list-style: none;
+  margin-left: 0;
+}
 
 .content--party {
+  padding-top: 0;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
      -moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
           box-shadow: inset 0 -1px 0 rgba(0,0,0,0.4);
@@ -153,7 +162,7 @@ section > .grid > .grid__item {
 
 .content--rsvp abbr {
   border: none;
-  color: $our-purple;
+  color: transparentize($our-purple, 0.6);
   font-variant: normal;
   text-transform: none;
 }
