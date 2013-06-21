@@ -31,7 +31,7 @@ body {
 
   color: $our-purple;
 /*   -webkit-text-fill-color: transparent; */
-  font-family: bran, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 }
 
@@ -192,7 +192,7 @@ section > .grid > .grid__item {
 .photo--engagement-3 {
   background-image: url(../img/033.jpg);
   background-position: 50% 40%;
-  height: 30em;
+  height: 600px;
     
   -webkit-box-shadow: inset 0 8px 16px -8px rgba(0,0,0,0.6);
      -moz-box-shadow: inset 0 8px 16px -8px rgba(0,0,0,0.6);
