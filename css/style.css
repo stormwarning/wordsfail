@@ -3279,6 +3279,7 @@ section > .grid > .grid__item {
   margin: 0; }
 
 .content--image {
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 20em;
@@ -3289,7 +3290,7 @@ section > .grid > .grid__item {
 
 .photo--engagement-1 {
   background-image: url(../img/115.jpg);
-  background-position: 50% -30%; }
+  /*   background-position: 50% -30%; */ }
 
 .photo--engagement-2 {
   background-image: url(../img/095.jpg);
