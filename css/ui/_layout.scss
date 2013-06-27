@@ -32,7 +32,7 @@ body {
   color: transparentize($our-purple, 0.6);
 /*   -webkit-text-fill-color: transparent; */
   font-family: 'Parisienne', cursive;
-  font-weight: normal;
+  font-weight: 400;
   text-shadow: 0 1px 0 rgba(255,255,255,0.8);
   
   -moz-font-feature-settings: "liga=1, dlig=1";
@@ -172,11 +172,12 @@ section > .grid > .grid__item {
   color: transparentize($our-purple, 0.6);
   font-variant: normal;
   text-transform: none;
+  font-weight: 400;
 }
 
 
 .content--details dt {
-  font-weight: bold;
+  font-weight: 400;
   
   @extend h3;
 }
