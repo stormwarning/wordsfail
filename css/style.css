@@ -3162,7 +3162,8 @@ h1, h2, h3, .content--details dt, h4, h5, h6 {
   -webkit-background-clip: text;
   color: rgba(51, 3, 132, 0.4);
   /*   -webkit-text-fill-color: transparent; */
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Parisienne', cursive;
+  font-weight: normal;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
