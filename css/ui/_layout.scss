@@ -48,14 +48,26 @@ body {
 
 
 .navigation {
+/*
   background: $our-purple;
   padding-top: $base-spacing-unit;
   padding-top: ($base-spacing-unit / $base-font-size)*1rem;
+*/
 }
 
 .nav--main {
   position: relative;
   text-align: right;
+  transition: 0.2s all ease-in-out;
+}
+
+.affix-top .nav--main {
+  background: $our-purple;
+  padding-top: $base-spacing-unit;
+  padding-top: ($base-spacing-unit / $base-font-size)*1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .affix .nav--main {
   background: $our-purple;
@@ -201,7 +213,7 @@ section > .grid > .grid__item {
 
 .photo--engagement-1 {
   background-image: url(../img/115.jpg);
-/*   background-position: 50% -30%; */
+  background-position: 50% 0%;
 }
 .photo--engagement-2 {
   background-image: url(../img/095.jpg);

@@ -3175,13 +3175,24 @@ h1, h2, h3, .content--details dt, h4, h5, h6 {
   margin-left: -1em; }
 
 .navigation {
-  background: #330384;
-  padding-top: 24px;
-  padding-top: 1.5rem; }
+  /*
+    background: $our-purple;
+    padding-top: $base-spacing-unit;
+    padding-top: ($base-spacing-unit / $base-font-size)*1rem;
+  */ }
 
 .nav--main {
   position: relative;
-  text-align: right; }
+  text-align: right;
+  transition: 0.2s all ease-in-out; }
+
+.affix-top .nav--main {
+  background: #330384;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 .affix .nav--main {
   background: #330384;
@@ -3297,7 +3308,7 @@ section > .grid > .grid__item {
 
 .photo--engagement-1 {
   background-image: url(../img/115.jpg);
-  /*   background-position: 50% -30%; */ }
+  background-position: 50% 0%; }
 
 .photo--engagement-2 {
   background-image: url(../img/095.jpg);
@@ -3315,7 +3326,7 @@ section > .grid > .grid__item {
   background: url(../img/060.jpg) no-repeat center center;
   background-attachment: fixed;
   background-size: cover;
-  /*   height: 520px; */ }
+  position: relative; }
 
 .hero header {
   height: 600px;
